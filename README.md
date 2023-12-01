@@ -17,12 +17,12 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 
 3. Deploy to Cloudflare
 
-- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` and environmental variables
+- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` environmental variables
 
 4. Deploy to Vercel
 
 - Switch the adapter to vercel
-- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` and environmental variables
+- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` environmental variables
 
 ## How it works
 
