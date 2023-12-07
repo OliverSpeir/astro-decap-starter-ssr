@@ -26,6 +26,7 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 
 ## How it works
 
+- Remark plugin for fixing import for blog images ( decap adds the `/` )
 - Hybrid SSR on Cloudlfare
 - Github backend of Decap
 
