@@ -7,6 +7,7 @@ backend:
   auth_endpoint: oauth
 
 media_folder: src/assets/img
+public_folder: src/assets/img
 
 collections:
   - name: "blog" 
