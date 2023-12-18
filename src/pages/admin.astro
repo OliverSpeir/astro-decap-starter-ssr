@@ -16,6 +16,10 @@
 			// eslint-disable-next-line
 			CMS.registerPreviewStyle("/global.css");
 		</script>
+
+		<!-- Customize the netlify identity widget to refresh on logout preventing users from using the cms when not logged in and then seeing an error -->
+		<script is:inline>netlifyIdentity.on('logout', () => location.reload());</script>
+
 		<!-- Only showing body in preview panel -->
 		<script src="@utils/preview.js"></script>
 	</body>
