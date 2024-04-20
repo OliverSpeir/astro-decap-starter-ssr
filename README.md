@@ -36,10 +36,6 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 - Tailwind typography for styling the blogs
   - Personally not a fan but I figured it was easy to use and remove
 
-## WIP
-
-This is a very rough WIP created very hastily
-
 ## Acknowledgements
 
 https://github.com/dorukgezici/astro-decap-cms-oauth
