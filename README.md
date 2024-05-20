@@ -36,6 +36,10 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 - Tailwind typography for styling the blogs
   - Personally not a fan but I figured it was easy to use and remove
 
+## Decap with netlify identity in astro
+
+https://github.com/OliverSpeir/astro-decap-ssg-netlify-identity
+
 ## Acknowledgements
 
 https://github.com/dorukgezici/astro-decap-cms-oauth
