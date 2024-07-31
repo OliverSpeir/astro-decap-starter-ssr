@@ -1,9 +1,9 @@
 backend:
   name: github
-  branch: main
-  repo: username/repo-name
-  site_domain: example.com
-  base_url: https://example.com
+  branch: update
+  repo: oliverspeir/astro-decap-starter-ssr
+  site_domain: astro-decap-starter-ssr.pages.dev
+  base_url: https://astro-decap-starter-ssr.pages.dev/
   auth_endpoint: oauth
 
 media_folder: src/assets/img

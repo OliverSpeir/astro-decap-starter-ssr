@@ -1,6 +1,10 @@
 # Decap Starter
 
-1. Set up GitHub OAuth app
+1. Deploy your site so you can get the assigned URL
+  
+  - or if you plan to use a custom domain you can set up the github oauth app directly
+
+2. Set up GitHub OAuth app
 
 On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or use this [direct link](https://github.com/settings/applications/new).
 
@@ -8,21 +12,17 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 
 **Authorization callback URL**: This must be the prod URL of your application followed by `/oauth/callback`.
 
-2. Set up your config
+3. Set up your config
 
 `/public/admin/config.yml`
 
 - Need to change the `repo`, `sitename`, and `base_url`
 - Can change the collections fields or media folder
 
-3. Deploy to Cloudflare
+4. Update env vars and redeploy
 
-- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` environmental variables
+- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` environmental variables to platform
 
-4. Deploy to Vercel
-
-- Switch the adapter to vercel
-- Add your `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` environmental variables
 
 ## How it works
 
