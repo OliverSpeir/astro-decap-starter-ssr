@@ -2,8 +2,8 @@ backend:
   name: github
   branch: update
   repo: oliverspeir/astro-decap-starter-ssr
-  site_domain: update.astro-decap-starter-ssr.pages.dev
-  base_url: https://update.astro-decap-starter-ssr.pages.dev/
+  site_domain: astro-decap-starter-ssr-git-update-oliverspeirs-projects.vercel.app/
+  base_url: https://astro-decap-starter-ssr-git-update-oliverspeirs-projects.vercel.app/
   auth_endpoint: oauth
 
 media_folder: src/assets/img

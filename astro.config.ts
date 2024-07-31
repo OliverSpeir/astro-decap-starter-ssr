@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel/serverless";
 
 const config: AstroUserConfig = defineConfig({
-	site: "https://astro-decap-starter-ssr.pages.dev/",
+	site: "https://astro-decap-starter-ssr-git-update-oliverspeirs-projects.vercel.app/",
 	output: "hybrid",
 	adapter: vercel(),
 	integrations: [
