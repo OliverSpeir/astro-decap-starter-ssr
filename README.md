@@ -26,12 +26,12 @@ On GitHub, go to Settings > Developer Settings > OAuth apps > New OAuth app. Or 
 
 ## How it works
 
-- Hybrid SSR on Cloudlfare
+- Hybrid SSR on Vercel
 - Github backend of Decap
 
   - This is why we need SSR
   - We create two endpoints used for auth ( `/oauth` and `/oauth/callback` )
-- The decap admin board is preconfigured with preview styles built from the tailwind of our project and to only show the body in the preview ( personal preference of mine can be removed by removing the scripts in `/pages/admin.astro`)
+- The decap admin board is preconfigured with preview styles built from the tailwind of our project and to only show the body in the preview ( personal preferences of mine can be removed by removing the scripts in `/pages/admin.astro`)
 - If you have a private repo you need to add anyone you want to be able to log into the CMS as a collaborator of the repo
 - Tailwind typography for styling the blogs
   - Personally not a fan but I figured it was easy to use and remove
