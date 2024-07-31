@@ -14,28 +14,29 @@
 		"sync": "astro sync"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^8.0.0",
-		"astro": "^4.0.3"
+		"@astrojs/vercel": "^7.7.2",
+		"astro": "^4.12.3"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.3.1",
-		"@astrojs/tailwind": "^5.0.3",
-		"@tailwindcss/typography": "^0.5.10",
-		"@typescript-eslint/eslint-plugin": "^6.13.1",
-		"autoprefixer": "^10.4.16",
-		"eslint": "^8.54.0",
-		"eslint-config-prettier": "^9.0.0",
+		"@astrojs/check": "^0.8.3",
+		"@astrojs/tailwind": "^5.1.0",
+		"@tailwindcss/typography": "^0.5.13",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"autoprefixer": "^10.4.19",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-formatter-codeframe": "^7.32.1",
-		"eslint-plugin-astro": "^0.29.1",
-		"eslint-plugin-jsx-a11y": "^6.8.0",
-		"eslint-plugin-prettier": "^5.0.1",
-		"postcss": "^8.4.31",
-		"postcss-cli": "^10.1.0",
+		"eslint-plugin-astro": "^1.2.3",
+		"eslint-plugin-jsx-a11y": "^6.9.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"postcss": "^8.4.40",
+		"postcss-cli": "^11.0.0",
 		"postinstall-postinstall": "^2.1.0",
-		"prettier": "^3.1.0",
-		"prettier-plugin-astro": "^0.12.2",
-		"prettier-plugin-tailwindcss": "^0.5.7",
-		"tailwindcss": "^3.3.5",
-		"typescript": "^5.3.2"
-	}
+		"prettier": "^3.3.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.5",
+		"tailwindcss": "^3.4.7",
+		"typescript": "^5.5.4"
+	},
+	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }

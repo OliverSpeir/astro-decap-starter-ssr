@@ -1,9 +1,9 @@
 backend:
   name: github
-  branch: main
-  repo: username/repo-name
+  branch: update
+  repo: username/repo
   site_domain: example.com
-  base_url: https://example.com
+  base_url: https://example.com/
   auth_endpoint: oauth
 
 media_folder: src/assets/img
