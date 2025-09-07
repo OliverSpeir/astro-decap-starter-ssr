@@ -1,12 +1,14 @@
-export const prerender = "false";
+export const prerender = false;
 import type { APIRoute } from "astro";
-import { clientId, clientSecret, tokenUrl } from "./_config";
+import { OAUTH_GITHUB_CLIENT_ID, OAUTH_GITHUB_CLIENT_SECRET } from "astro:env/server";
+
+const tokenUrl = "https://github.com/login/oauth/access_token";
 
 export const GET: APIRoute = async ({ url, redirect }) => {
 	const data = {
 		code: url.searchParams.get("code"),
-		client_id: clientId,
-		client_secret: clientSecret,
+		client_id: OAUTH_GITHUB_CLIENT_ID,
+		client_secret: OAUTH_GITHUB_CLIENT_SECRET,
 	};
 
 	let script;
@@ -22,10 +24,10 @@ export const GET: APIRoute = async ({ url, redirect }) => {
 		});
 
 		if (!response.ok) {
-			throw new Error(`HTTP error! status: ${response.status}`);
+			throw new Error(`HTTP error! status: ${String(response.status)}`);
 		}
 
-		const body = await response.json();
+		const body = (await response.json()) as { access_token: string };
 
 		const content = {
 			token: body.access_token,

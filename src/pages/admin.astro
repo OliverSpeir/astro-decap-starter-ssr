@@ -9,15 +9,14 @@
 	</head>
 	<body>
 		<!-- Dashboard script-->
-		<script is:inline src="https://unpkg.com/decap-cms@^3.4.0/dist/decap-cms.js"></script>
+		<script is:inline src="https://unpkg.com/decap-cms@^3.8.3/dist/decap-cms.js"></script>
 		<!-- CSS in preview panel -->
 		<script>
 			// @ts-expect-error CMS is defined globally
-			// eslint-disable-next-line
-			CMS.registerPreviewStyle("/global.css");
+			CMS.registerPreviewStyle("/preview.css");
 		</script>
 
-		<!-- Only showing body in preview panel -->
-		<script src="@utils/preview.js"></script>
+		<!-- Decap CMS customizations for image handling -->
+		<script src="../decap-utils/decap-customizations.js"></script>
 	</body>
 </html>

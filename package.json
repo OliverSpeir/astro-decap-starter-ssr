@@ -1,42 +1,39 @@
 {
-	"name": "decap-starter",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build:tailwind": "tailwindcss -i src/assets/styles/global.css -o dist/global.css --minify",
-		"build:autoprefixer": "postcss dist/global.css -o dist/global.css",
-		"build": "astro build && pnpm run build:tailwind && pnpm run build:autoprefixer ",
-		"preview": "astro preview",
-		"astro": "astro",
-		"check": "astro check",
-		"sync": "astro sync"
-	},
-	"dependencies": {
-		"@astrojs/vercel": "^7.7.2",
-		"astro": "^4.12.3"
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.8.3",
-		"@astrojs/tailwind": "^5.1.0",
-		"@tailwindcss/typography": "^0.5.13",
-		"@typescript-eslint/eslint-plugin": "^7.18.0",
-		"autoprefixer": "^10.4.19",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-formatter-codeframe": "^7.32.1",
-		"eslint-plugin-astro": "^1.2.3",
-		"eslint-plugin-jsx-a11y": "^6.9.0",
-		"eslint-plugin-prettier": "^5.2.1",
-		"postcss": "^8.4.40",
-		"postcss-cli": "^11.0.0",
-		"postinstall-postinstall": "^2.1.0",
-		"prettier": "^3.3.3",
-		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-tailwindcss": "^0.6.5",
-		"tailwindcss": "^3.4.7",
-		"typescript": "^5.5.4"
-	},
-	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
+  "name": "decap-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "pnpm build:tailwind && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "sync": "astro sync",
+    "build:tailwind": "tailwindcss -i src/assets/styles/global.css -o public/preview.css",
+    "dev:tailwind": "tailwindcss -i src/assets/styles/global.css -o public/preview.css --watch"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.4.3",
+    "astro": "^5.13.5",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.13",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4.1.13"
+  }
 }
