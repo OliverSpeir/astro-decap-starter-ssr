@@ -35,5 +35,13 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.13"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "@tailwindcss/oxide",
+      "@parcel/watcher"
+    ]
   }
 }
